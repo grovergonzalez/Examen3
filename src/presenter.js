@@ -1,4 +1,4 @@
-import {CalculaCambio, verificarDatos} from "./Totalizador";
+import {CalculaCambio, verificarDatos, desfragmentarCambio} from "./Totalizador";
 
 const montoventa = document.querySelector("#monto-venta");
 const montoefectivo = document.querySelector("#monto-efectivo");
@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   const numVenta = Number.parseInt(montoventa.value);
   const numEfectivo = Number.parseInt(montoefectivo.value);
 
-  if(CalculaCambio(numVenta,numEfectivo)){
+  if(verificarDatos(numVenta,numEfectivo)){
     window.alert("Ingrese los datos nuevamente!");
   }
   div.innerHTML = "<p>" + CalculaCambio(numVenta, numEfectivo) + "</p>";

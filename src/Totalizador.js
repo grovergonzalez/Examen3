@@ -1,5 +1,6 @@
 function CalculaCambio(a, b) {
-    return b - a;
+    const cambio = b-a;
+    return cambio;
 }
 
 function verificarDatos(a, b){
@@ -9,5 +10,12 @@ function verificarDatos(a, b){
     }
 }
 
-export {CalculaCambio, verificarDatos};
+var cortes = [0.2, 0.5, 1, 2, 5];
+
+function desfragmentarCambio(a, b){
+    const cambio = CalculaCambio(a,b);
+    return cambio;
+}
+
+export {CalculaCambio, verificarDatos, desfragmentarCambio};
   
