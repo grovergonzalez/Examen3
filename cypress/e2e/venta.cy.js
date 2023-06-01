@@ -1,9 +1,11 @@
 describe("Ventas", () => {
-    it("", () => {
+    it("Se debería poder ver el input de monto venta en pantalla", () => {
       cy.visit("/");
       cy.get("#monto-venta").type(4);
-    //   cy.get("#sumar-button").click();
-    //   cy.get("#resultado-div").should("contain", "9");
     });
+    it("Se debería poder ver los inputs de monto venta y efectivo en pantalla", () => {
+        cy.visit("/");
+        cy.get("#monto-efectivo").type(5);
+      });
   });
   
