@@ -19,5 +19,5 @@ function desfragmentarCambio(a, b){
     return cambioMonedas;
 }
 
-export {CalculaCambio, verificarDatos, desfragmentarCambio};
+export {CalculaCambio, verificarDatos, desfragmentarCambio, cortes};
   
