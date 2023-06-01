@@ -17,6 +17,10 @@ function desfragmentarCambio(a, b){
     return cambio;
     const cambioMonedas = [];
     return cambioMonedas;
+    for(i=0; i<length(cortes); i++)
+    {
+        ret
+    }
 }
 
 export {CalculaCambio, verificarDatos, desfragmentarCambio, cortes};
