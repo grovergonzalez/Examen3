@@ -1,15 +1,15 @@
-import sumar from "./sumador";
+import CalculaCambio from "./Totalizador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const montoventa = document.querySelector("#monto-venta");
+const montoefectivo = document.querySelector("#monto-efectivo");
+const form = document.querySelector("#CalcularCambio-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const numVenta = Number.parseInt(montoventa.value);
+  const numEfectivo = Number.parseInt(montoefectivo.value);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + CalculaCambio(numVenta, numEfectivo) + "</p>";
 });
