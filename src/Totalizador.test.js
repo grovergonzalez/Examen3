@@ -1,4 +1,4 @@
-import CalculaCambio from "./Totalizador";
+import {CalculaCambio, verificarDatos} from "./Totalizador";
 
 describe("Cambio", () => {
     it("deberia Restar el monto venta con el efectivo", () => {
