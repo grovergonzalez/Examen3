@@ -14,10 +14,8 @@ var cortes = [0.2, 0.5, 1, 2, 5];
 
 function desfragmentarCambio(a, b){
     const cambio = CalculaCambio(a,b);
-    return cambio;
-    const cambioMonedas = [];
-    return cambioMonedas;
-    for(i=0; i<length(cortes); i++)
+    var cambioMonedas = [];
+    for(let i=0; i<cortes.length; i++)
     {
         if(cambio % cortes[i] == 0){
             cambioMonedas = [i];

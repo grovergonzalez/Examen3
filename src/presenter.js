@@ -1,4 +1,4 @@
-import {CalculaCambio, verificarDatos, desfragmentarCambio} from "./Totalizador";
+import {CalculaCambio, verificarDatos, desfragmentarCambio, cortes} from "./Totalizador";
 
 const montoventa = document.querySelector("#monto-venta");
 const montoefectivo = document.querySelector("#monto-efectivo");
