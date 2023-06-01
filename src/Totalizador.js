@@ -19,8 +19,11 @@ function desfragmentarCambio(a, b){
     return cambioMonedas;
     for(i=0; i<length(cortes); i++)
     {
-        ret
+        if(cambio % cortes[i] == 0){
+            cambioMonedas = [i];
+        }
     }
+    return cambioMonedas;
 }
 
 export {CalculaCambio, verificarDatos, desfragmentarCambio, cortes};
