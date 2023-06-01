@@ -10,4 +10,7 @@ describe("Cambio en monedas", () => {
     it("deberia Restar el monto venta con el efectivo", () => {
       expect(desfragmentarCambio(4, 5)).toEqual(1);
     });
+    it("deberia Restar el monto venta con el efectivo y devolverel array cambiomonedas", () => {
+        expect(desfragmentarCambio(4, 5)).toEqual(1);
+      });
 });
